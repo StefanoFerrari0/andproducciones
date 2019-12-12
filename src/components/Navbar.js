@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Logo from '../images/logo.webp';
-import {FaAlignRight} from 'react-icons/fa';
+import {FaAlignLeft} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 export default class Navbar extends Component
 {
@@ -15,36 +15,40 @@ export default class Navbar extends Component
 
     render()
     {
-        return (<nav className="navbar">
-        <div className="nav-center">
-            <Link to="/">
+
+        return (
+          <nav className="navbar">
+            <div className="nav-logo">
+              <Link to="/">
               <img id="logo" src={Logo} alt="AndProducciones"/>
-            </Link>
-            <button
+              </Link>
+            </div>
+          <div className="nav-menu">
+              <button
               type="button"
               className="nav-btn"
               onClick={this.handleToggle}
+              >
+              <FaAlignLeft className="nav-icon" />
+              </button>
+            <ul
+              className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
             >
-              <FaAlignRight className="nav-icon" />
-            </button>
-          <ul
-            className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
-          >
-            <li>
+              <li>
               <Link to="/eventos/">Eventos</Link>
-            </li>
-            <li>
+              </li>
+              <li>
               <Link to="/artistas/">Artistas</Link>
-            </li>
-            <li>
+              </li>
+              <li>
               <Link to="/cultura/">Cultura</Link>
-            </li>
-            <li>
+              </li>
+              <li>
               <Link to="/contacto/">Contacto</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+              </li>
+            </ul>
+          </div>
+         </nav> 
         );
     }
 }

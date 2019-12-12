@@ -21,18 +21,18 @@
     line-height: 1.4;
   }
 
-.navbar {
+  .navbar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     padding: 0.75rem 2rem;
+    width: 100%;
     background: var(--mainBlack);
-    z-index: 1;
+    display: flex;
   }
 
+  
   #logo{
-    margin-top: 10px;
     width: 100px;
     height: 40px;
   }
@@ -56,6 +56,9 @@
     list-style-type: none;
   }
 
+  .nav-menu{
+    width: 600px;
+  }
   .nav-links a {
     display: block;
     text-decoration: none;
@@ -72,8 +75,8 @@
   }
   
   .show-nav {
-    margin-top: 15px;
-    height: 140px;
+    margin-top: 35px;
+    height: 130px;
   }
 
   .show-nav li{
@@ -81,20 +84,20 @@
   }
 
   
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 783px) {
+    
     .nav-btn {
       display: none;
     }
 
-    .nav-center {
-      max-width: 100%;
+    .nav-menu{
+      max-width: 1170px;
       display: flex;
     }
 
     .nav-links {
       height: auto;
       display: flex;
-      margin-left: 38rem;
     }
     
     .nav-links a {
@@ -103,15 +106,28 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 782px) {
+   
+    .nav-logo{
+      /*position: absolute;*/
+      z-index: 1;
+      width: 100px;
+      height: 40px;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .nav-btn{
+      float: left;
+    }
 
-    .nav-center{
+    .nav-menu{
       width: 100%;
       display: block;
       float: left;
       margin-left: auto;
-      margin-right: auto;
+      margin-right: auto;      
     }
-
+    
   }
-  /* end of navbar */
