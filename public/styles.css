@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --mainRed: #FF6667;
+    --mainWhite: rgb(211, 211, 211);;
+    --mainBlack: black;
+    --mainGrey: #302F2F;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 3px;
+    --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  body {
+    background: var(--mainGrey);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
+  }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.75rem 2rem;
+    background: var(--mainBlack);
+    z-index: 1;
+  }
+
+  #logo{
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+  }
+
+  .nav-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .nav-icon {
+    font-size: 1.5rem;
+    color: var(--mainWhite);
+  }
+
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--mainTransition);
+    list-style-type: none;
+  }
+
+  .nav-links a {
+    display: block;
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    transition: var(--mainTransition);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: var(--mainSpacing);
+  }
+
+  .nav-links a:hover {
+    color: var(--mainRed);
+  }
+  
+  .show-nav {
+    margin-top: 15px;
+    height: 140px;
+  }
+
+  .show-nav li{
+    margin-top: 10px;
+  }
+
+  
+  @media screen and (min-width: 768px) {
+    .nav-btn {
+      display: none;
+    }
+
+    .nav-center {
+      max-width: 100%;
+      display: flex;
+    }
+
+    .nav-links {
+      height: auto;
+      display: flex;
+      margin-left: 38rem;
+    }
+    
+    .nav-links a {
+      padding-top: 18px;
+      margin: 2px 2rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .nav-center{
+      width: 100%;
+      display: block;
+      float: left;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+  /* end of navbar */
