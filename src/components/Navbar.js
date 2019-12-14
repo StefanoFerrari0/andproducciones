@@ -18,7 +18,7 @@ export default class Navbar extends Component
 
         return (
           <nav className="navbar">
-            <div className="nav-logo">
+            <div className={this.state.isOpen ? "nav-logo logo-center" : "nav-logo"}>
               <Link to="/">
               <img id="logo" src={Logo} alt="AndProducciones"/>
               </Link>

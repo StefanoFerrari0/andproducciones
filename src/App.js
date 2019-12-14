@@ -1,4 +1,5 @@
 import React from "react";
+import {Route, Switch} from 'react-router-dom';
 
 import Home from './pages/Home';
 import Artistas from './pages/Artistas';
@@ -9,11 +10,12 @@ import Error from './pages/Error';
 import Eventos from './pages/Eventos';
 import FiestaX from './pages/FiestaX';
 
-import {Route, Switch} from 'react-router-dom';
-
 import Navbar from './components/Navbar';
+import Firebase from './components/Firebase/firebase'
+
 function App()
 {
+    
     return (
     <>
     <Navbar></Navbar>

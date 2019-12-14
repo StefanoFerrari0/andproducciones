@@ -1,26 +1,28 @@
+:root {
+  --mainRed: #FF6667;
+  --mainWhite: rgb(211, 211, 211);;
+  --mainBlack: black;
+  --mainGrey: #302F2F;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 3px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--mainWhite);
   }
 
-  :root {
-    --mainRed: #FF6667;
-    --mainWhite: rgb(211, 211, 211);;
-    --mainBlack: black;
-    --mainGrey: #302F2F;
-    --mainTransition: all 0.3s linear;
-    --mainSpacing: 3px;
-    --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-    --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
-  }
-  
-  body {
-    background: var(--mainGrey);
+  .body{
+    background-color: #262626;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.4;
   }
 
+  /* N A V B A R */
   .navbar {
     position: fixed;
     top: 0;
@@ -108,16 +110,29 @@
 
   @media screen and (max-width: 782px) {
    
+    nav.navbar{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
     .nav-logo{
-      /*position: absolute;*/
+      position: absolute;
       z-index: 1;
       width: 100px;
       height: 40px;
-      top: 0;
       left: 0;
+      top: 25px;
       right: 0;
       margin: auto;
+      transition: var(--mainTransition);
     }
+
+    
+    .logo-center{
+      top: 25px;
+      transition: var(--mainTransition);
+    }
+    
     .nav-btn{
       float: left;
     }
@@ -127,7 +142,107 @@
       display: block;
       float: left;
       margin-left: auto;
-      margin-right: auto;      
+      margin-right: auto; 
     }
-    
+
+    .nav-links{
+      float: bottom;
+    }
   }
+
+  /*  F I N   N A V B A R */
+
+
+  /* H O M E */
+
+  .eventoDefault{
+    min-height: calc(100vh - 66px);
+    background: url("http://djmagla.com/wp-content/uploads/2019/03/Florido-664x400.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .eventoDefault h1{
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    letter-spacing: 8px;
+    padding: 15px;
+    background-color: var(--mainBlack);
+    font-size: 80px;
+    box-shadow: 0px 12px 0px -1px rgba(255,102,103,0.81);
+    margin-top: 450px;
+  }
+  
+  @media screen and (max-width: 782px) {
+    .eventoDefault{
+      min-height: calc(65vh - 0px);
+  }
+
+  .eventoDefault h1{
+    font-size: 8vw;
+    box-shadow: 0px 12px 0px -1px rgba(255,102,103,0.81)
+  }
+  }
+
+  .div-card{
+    max-width:100%;
+    max-height: 1000px;
+    width:100%;
+    margin:20px auto;
+    padding:0;
+    /*Flexbox setup*/
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .card{
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 30px;
+    box-shadow: 0 3px 3px 0.9px rgba(0, 0, 0, 0.2);
+    /* ANIMACIÓN */
+    background-image: linear-gradient(to bottom, var(--mainRed)2%, var(--mainBlack)98%);
+    transition: background-position 1s;
+    background-size: 100% 200%;
+}
+
+.card h2{
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.card img{
+  min-height: calc(10vh - 66px);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition:filter 0.4s;
+  -webkit-transition:-webkit-filter 1s;
+}
+
+.card:hover{
+    cursor: pointer;
+    background-position: 0 -100%;
+}
+
+.card:hover img{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+@media screen and (max-width: 782px) {
+
+.card{
+  display: block;
+
+}
+.div-card{
+  display: table;
+  width: 25%;
+  text-align: center;
+}
+}
