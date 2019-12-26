@@ -11,7 +11,9 @@ import Eventos from './pages/Eventos';
 import FiestaX from './pages/FiestaX';
 
 import Navbar from './components/Navbar';
-import Firebase from './components/Firebase/firebase'
+import Footer from './components/Footer'
+
+
 
 function App()
 {
@@ -21,14 +23,15 @@ function App()
     <Navbar></Navbar>
     <Switch>
     <Route exact path="/" component={Home}/>
-    <Route exact path="/artistas/" component={Artistas}/>
+    <Route exact path="/artistas" component={Artistas}/>
     <Route exact path="/artistas/:djs" component={ArtistaX}/>
-    <Route exact path="/contacto/" component={Contacto}/>
-    <Route exact path="/cultura/" component={Cultura}/>
-    <Route exact path="/eventos/" component={Eventos}/>
+    <Route exact path="/contacto" component={Contacto}/>
+    <Route exact path="/cultura" component={Cultura}/>
+    <Route exact path="/eventos" component={Eventos}/>
     <Route exact path="/eventos/:fiesta" component={FiestaX}/>
     <Route component={Error}/>
     </Switch>
+    <Footer></Footer>
 
     </>
     )

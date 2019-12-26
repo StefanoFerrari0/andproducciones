@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Logo from '../images/logo.webp';
 import {FaAlignLeft} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
+
 export default class Navbar extends Component
 {
     state={
@@ -35,16 +36,16 @@ export default class Navbar extends Component
               className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
             >
               <li>
-              <Link to="/eventos/">Eventos</Link>
+              <Link to="/eventos">Eventos</Link>
               </li>
               <li>
-              <Link to="/artistas/">Artistas</Link>
+              <Link to="/artistas">Artistas</Link>
               </li>
               <li>
-              <Link to="/cultura/">Cultura</Link>
+              <Link to="/cultura">Cultura</Link>
               </li>
               <li>
-              <Link to="/contacto/">Contacto</Link>
+              <Link to="/contacto">Contacto</Link>
               </li>
             </ul>
           </div>
