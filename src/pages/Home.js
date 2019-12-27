@@ -1,8 +1,8 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import Titulo from '../components/Titulo'
-import Fiesta from '../components/Fiesta'
-import SubLink from '../components/SubtituloLink'
+import Titulo from '../components/Title'
+import Fiesta from '../components/Party'
+import SubLink from '../components/SubtitleLink'
 import SoundCloudHome from '../components/Soundcloud'
 
 export default function Home() {

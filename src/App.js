@@ -1,19 +1,15 @@
 import React from "react";
 import {Route, Switch} from 'react-router-dom';
-
 import Home from './pages/Home';
-import Artistas from './pages/Artistas';
+import Artistas from './pages/ArtistsPage';
 import ArtistaX from './pages/ArtistaX';
-import Contacto from './pages/Contacto';
-import Cultura from './pages/Cultura';
-import Error from './pages/Error';
-import Eventos from './pages/Eventos';
-import FiestaX from './pages/FiestaX';
-
+import Contacto from './pages/ContactPage';
+import Cultura from './pages/CulturePage';
+import Error from './pages/ErrorPage';
+import Eventos from './pages/EventsPage';
+import EventXPage from './pages/EventXPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'
-
-
 
 function App()
 {
@@ -28,13 +24,11 @@ function App()
     <Route exact path="/contacto" component={Contacto}/>
     <Route exact path="/cultura" component={Cultura}/>
     <Route exact path="/eventos" component={Eventos}/>
-    <Route exact path="/eventos/:fiesta" component={FiestaX}/>
+    <Route exact path="/eventos/:nombreFiesta" component={EventXPage} />
     <Route component={Error}/>
     </Switch>
     <Footer></Footer>
-
     </>
     )
 }
-
 export default App;

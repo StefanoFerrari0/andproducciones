@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from 'axios';
 
 class FormContact extends Component {
     constructor(props) {
@@ -13,7 +12,7 @@ class FormContact extends Component {
   
   render() {
    return(
-    <div className="container-form row col-xs-1 col-sm-12 col-md-12 col-lg-12 align-items-start" style={{margin: 'auto'}}>
+    <div className="container-form clearfix visible-xs row col-xs-1 col-sm-12 col-md-12 col-lg-12 align-items-start" style={{margin: 'auto'}}>
        <div className="background-form col-xs-1 col-sm-10 col-md-10 col-lg-9 text-center">
      <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
       <div className="form-group">
@@ -49,11 +48,6 @@ class FormContact extends Component {
 
       const { name, email, message } = this.state;
 
-      await axios.post('/api/form', {
-        name, 
-        email,
-        message
-      })
 
     }
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import Titulo from '../components/Titulo'
-import Fiesta from '../components/Fiesta'
+import Titulo from '../components/Title'
+import Fiesta from '../components/Party'
 const Eventos = () => {
     return (
         <>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner';
-import Titulo from '../components/Titulo';
+import Titulo from '../components/Title';
 import Artists from '../components/Artists';
 
 const Artistas = () => {

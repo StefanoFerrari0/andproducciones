@@ -25,7 +25,6 @@
 
   /* N A V B A R */
   .navbar {
-    position: fixed;
     top: 0;
     left: 0;
     padding: 0.75rem 2rem;
@@ -222,6 +221,7 @@
     min-height: calc(78vh - 1px);
     background-position-x: 80%;
   }
+
   header.eventoDefault{
     min-height: calc(78vh - 1px);
   }
@@ -234,7 +234,6 @@
   .title{
     font-size: 6vw;
   }
-  
   }
 
   .div-card-home{
@@ -247,7 +246,6 @@
     justify-content: center;
   }
 
-  
   /* CARTAS */
   .div-card-events{
     display: table;
@@ -299,12 +297,18 @@
 .card{
   display: block;
   margin-right: 15px;
+  height: 355px;
+
+}
+
+.card img{
+  width: 250px;
+  margin: 0;
 }
 
 .div-card-home, .div-card-events{
   display: table;
   width: 25%;
-  text-align: center;
 }
 }
 
@@ -332,13 +336,9 @@ footer{
     text-align: center;
     font-size: 10px;
     padding-top: 50px;
-    padding-bottom: 20px;
-    height: 150px;
+    height: 160px;
     width:100%;
     position: static;
-    left: 0;
-    bottom:0; 
-    display: flex;
 }
 
 .social{
@@ -347,6 +347,7 @@ footer{
 }
 
 .social li{
+  margin: auto;
   display: inline;    
   padding: 5px 30px; 
   color: white;
@@ -358,6 +359,7 @@ footer{
   height: 30px;
   transition: var(--mainTransition);
 }
+
 
 #h3Footer{
   font-size: 10px;
@@ -405,6 +407,7 @@ footer{
 }
 
 /* F I N   A R T I S T A S */
+
 
 /* C O N T A C T O */
 

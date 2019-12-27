@@ -1,5 +1,5 @@
 import React from "react";
-import Titulo from "./Titulo"
+import Titulo from "./Title"
 
 export default function SoundCloud({url, hero, title})
 {

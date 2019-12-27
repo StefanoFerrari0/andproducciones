@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import UseParams from '../components/UseParams'
 
-export default class ArtistaX extends Component {
-    render() {
-        return <div>Hello from ArtistaX</div>
-    }
+export default function ArtistaX() {
+    return <div>
+      <UseParams></UseParams>
+    </div>
 }
+
 
