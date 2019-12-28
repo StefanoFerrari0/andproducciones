@@ -1,7 +1,5 @@
 import React from "react";
-import {FaInstagram} from 'react-icons/fa';
-import {FaTwitterSquare} from 'react-icons/fa';
-import {FaFacebookSquare} from 'react-icons/fa';
+import {FaInstagram, FaTwitterSquare, FaFacebookSquare } from 'react-icons/fa';
 
 export default function Footer()
 {
@@ -17,5 +15,4 @@ export default function Footer()
                  <br/><p id="pFooter">Desarrollo: <a target="_blank" className="stefano" rel="noopener noreferrer" href="https://www.instagram.com/StefanoFerrari0">Stefano Ferrari</a></p>
 
         </footer>
-
 }

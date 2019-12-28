@@ -28,6 +28,7 @@ export default class Artists extends Component
   
   HtmlArtistas() {
     const artistas = this.state.artistas;
+    
       return <> 
       {artistas && artistas !== undefined ? artistas.map((artista) =>
          <Card key={artista.id} name= {artista.data.name} 

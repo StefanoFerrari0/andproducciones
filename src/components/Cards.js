@@ -1,6 +1,6 @@
 import React from "react";
 
-export  default function Card({url, hero, name, date, urlEvento})
+export default function Card({url, hero, name, date, urlEvento})
 {
   return <a href={urlEvento}>
             <div className = {hero}>

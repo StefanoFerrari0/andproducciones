@@ -12,8 +12,8 @@ class FormContact extends Component {
   
   render() {
    return(
-    <div className="container-form clearfix visible-xs row col-xs-1 col-sm-12 col-md-12 col-lg-12 align-items-start" style={{margin: 'auto'}}>
-       <div className="background-form col-xs-1 col-sm-10 col-md-10 col-lg-9 text-center">
+    <div className="container-form clearfix visible-xs row col-xs-5 col-sm-12 col-md-12 col-lg-12 align-items-start" style={{marginBottom: "50px", margin: "auto;"}}>
+       <div className="background-form visible-xs  col-xs-5 col-sm-10 col-md-10 col-lg-9 text-center">
      <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
       <div className="form-group">
           <input type="text" placeholder="Nombre" className="form-name col-xs-2 col-sm-8 col-md-8 col-lg-7" value={this.state.name} onChange={this.onNameChange.bind(this)} />

@@ -2,7 +2,8 @@ import React from 'react'
 import Banner from '../components/Banner'
 import Titulo from '../components/Title'
 import Fiesta from '../components/Party'
-const Eventos = () => {
+
+export default function Eventos() {
     return (
         <>
         <Banner hero="eventoPage"></Banner>
@@ -13,5 +14,3 @@ const Eventos = () => {
         </>
         )
 };
-
-export default Eventos;
