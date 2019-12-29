@@ -293,7 +293,7 @@
   -webkit-filter: grayscale(0);
 }
 
-@media screen and (max-width: 782px) {
+@media screen and (max-width: 840px) {
 
 .card{
   display: block;
@@ -509,7 +509,7 @@ footer{
     width: 50%;
     height: calc(100vh - 66px);
     background-color: black;
-    float: right;
+    font-size: 15px;
   }
 
   .title-ArtistaX{
@@ -565,7 +565,6 @@ footer{
     bottom: 0;
   }
 
-
   .SocialNetworks-ArtistaX{
     display: flex;
     justify-content: space-around
@@ -578,12 +577,21 @@ footer{
 
   @media (min-width: 320px) and (max-width: 480px) {
     
+    .background-ArtistaX{
+      width: 100%;
+      height: fit-content;
+      background-color: black;
+    }
+
+    .banner-ArtistaX{
+      width: 100%;
+      height: calc(100vh - 66px);
+    }
+
     .instagram, .twitter, .facebook, .spotify, .soundcloud{
+      cursor: pointer;
       width: 20px;
       height: 20px;
-    }
-    .banner-ArtistaX{
-      min-height: calc(80vh - 1px);
     }
 
     .title-ArtistaX{
@@ -617,31 +625,53 @@ footer{
     }
   
     .SocialNetworks-ArtistaX{
+      width: 100%;
+      margin-top: 30px;
       text-align: center;
-      display: flex;
-      margin: 0 auto;
     }
 
     .social-ArtistaX li{
       margin: auto;
       display: inline-flex;    
-      padding: 5px 5px; 
+      padding: 0 5px; 
+    }
+
+    .SoundCloud-ArtistaX{
+      position: relative;
+      width: 80%;
+      margin: auto;
     }
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
   
+    .background-ArtistaX{
+      width: 100%;
+      height: fit-content;
+      background-color: black;
+    }
+
+    .banner-ArtistaX{
+      width: 100%;
+      height: calc(100vh - 66px);
+    }
+
+    .instagram, .twitter, .facebook, .spotify, .soundcloud{
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+    }
+
     .title-ArtistaX{
       display: inline-block;
       margin: 0;
       font-size: 6vw;
       width: 100%;
-      height: 50px;
+      height: 30px;
     }
   
     .residentTitle{
       font-size: 1rem;
-      margin-top: 50px;
       text-align: center;
       width: auto;
       margin: 0;
@@ -650,32 +680,44 @@ footer{
     .titleAndSubtitle{
       margin-top: 30px;
       display: inline-block;
-      height: 80px;
+      height: 70px;
       width: 100%;
     }
 
     .biografia-ArtistaX{
       margin: auto;
-      margin-bottom: 30px;
-      font-size: 2.4vh;
+      font-size: 2vh;
       width: 80%;
       text-align: center;
       font-family: "Source Sans Pro", sans-serif;
     }
   
     .SocialNetworks-ArtistaX{
-      display: flex;
-      margin: 0 auto;
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
     }
 
     .social-ArtistaX li{
       margin: auto;
-      display: inline-flex;
+      display: inline-flex;    
+      padding: 0 5px; 
+    }
+
+    .SoundCloud-ArtistaX{
+      position: relative;
+      width: 80%;
+      margin: auto;
     }
   }
 
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
+    .background-ArtistaX{
+      width: 50%;
+      float: right;
+    }
+
     .title-ArtistaX{
       display: inline-block;
       margin: 0;
@@ -704,9 +746,9 @@ footer{
     .biografia-ArtistaX{
       margin: auto;
       margin-bottom: 30px;
-      font-size: 2.4vh;
+      font-size: 2vh;
       width: 80%;
-      text-align: center;
+      text-align: left;
       font-family: "Source Sans Pro", sans-serif;
     }
   
@@ -777,8 +819,10 @@ footer{
     }
   
     .biografia-ArtistaX{
+      text-align: left;
+      margin-left: 20px;
+      font-size: 15px;
       width: 500px;
-      text-align: center;
       font-family: "Source Sans Pro", sans-serif;
     }
 
@@ -793,6 +837,7 @@ footer{
     }
   }
 
+  
   @media (min-width: 1281px) {
   
     .banner-ArtistaX{
@@ -814,10 +859,9 @@ footer{
       font-weight: 800;
       letter-spacing: 2px;
       margin-top: 50px;
-      margin-left: 50px;
+      margin-left: 70px;
       text-align: center;
       align-items: center;
-      margin-right: 0px;
       width: auto;
       height: 150px;
     }
@@ -848,8 +892,10 @@ footer{
     }
   
     .biografia-ArtistaX{
+      text-align: left;
+      margin-left: 20px;
+      font-size: 15px;
       width: 500px;
-      text-align: center;
       font-family: "Source Sans Pro", sans-serif;
     }
 
@@ -865,3 +911,6 @@ footer{
     
   }
   /*  F I N  A R T I S T A  X */
+
+
+  

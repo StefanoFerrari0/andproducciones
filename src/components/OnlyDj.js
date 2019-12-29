@@ -26,7 +26,7 @@ export default function OnlyDj({name, image, bio, country, resident, soundcloud,
         </div>
 
       <div className="SoundCloud-ArtistaX">
-        <iframe width="100%" height="100" 
+        <iframe title={`DJ-` + {name}}width="100%" height="100" 
         scrolling="no" frameBorder="no" 
         allow="autoplay" 
         src={urlSoundcloud}></iframe>
