@@ -411,9 +411,6 @@ footer{
 
 /* C O N T A C T O */
 
-  .container-form{
-    margin-bottom: 500px;
-  }
   .contactoPage{
     min-height: calc(100vh - 66px);
     background: url("https://scontent.ftuc1-2.fna.fbcdn.net/v/t1.0-9/s960x960/72377237_961472120864263_1964672342185476096_o.jpg?_nc_cat=102&_nc_oc=AQkTqBKdJn1usjnHEKBYniEjxdkTFVaHwYDcmi8n7uxS7IG4IFzbMJWAlZdUk-q_1No&_nc_ht=scontent.ftuc1-2.fna&oh=aca44ade31198b9d7099236138a54ae7&oe=5E77CE8B") center/cover no-repeat;
@@ -495,6 +492,11 @@ footer{
     color: white;
   }
   
+  .Recaptcha{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
   /*  F I N  C O N T A C T O */
 
 
@@ -910,6 +912,7 @@ footer{
     }
     
   }
+  
   /*  F I N  A R T I S T A  X */
 
 

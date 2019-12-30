@@ -25,13 +25,10 @@ export default function OnlyDj({name, image, bio, country, resident, soundcloud,
              </ul>
         </div>
 
-      <div className="SoundCloud-ArtistaX">
-        <iframe title={`DJ-` + {name}}width="100%" height="100" 
-        scrolling="no" frameBorder="no" 
-        allow="autoplay" 
-        src={urlSoundcloud}></iframe>
-      </div>
-       
+        <div className="SoundCloud-ArtistaX">
+        { (userSoundcloud) ? <iframe title={`DJ-` + {name}}width="100%" height="100" scrolling="no" frameBorder="no" allow="autoplay" src={urlSoundcloud}></iframe>
+        : null}
+        </div> 
   </div>
   </>
 }

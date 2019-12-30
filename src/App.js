@@ -10,6 +10,7 @@ import Eventos from './pages/EventsPage';
 import EventXPage from './pages/EventXPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'
+import Login from './components/Login';
 
 function App()
 {
