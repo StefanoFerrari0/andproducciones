@@ -1,5 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Banner from '../components/Banner';
+import Culture from '../components/Culture';
 
-export default function Cultura() {
-    return <div>Hello from Cultura</div>
+export default function CulturaPage() {
+    
+    return <>
+    <Banner hero="culturePage"></Banner>
+    <Culture/>
+    </>
 }

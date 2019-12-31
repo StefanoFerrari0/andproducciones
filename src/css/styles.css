@@ -251,7 +251,7 @@
     padding-bottom: 52px;
     display: table;
     margin: 0 auto;
-    width: 90%;
+    width: 84%;
   }
 
   
@@ -916,4 +916,123 @@ footer{
   /*  F I N  A R T I S T A  X */
 
 
+  /* C U L T U R A */
+
+  .culturePage{
+    min-height: calc(100vh - 66px);
+    background: url("https://scontent.ftuc1-2.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/72604232_961478627530279_1631796017215045632_o.jpg?_nc_cat=105&efg=eyJpIjoidCJ9&_nc_ohc=xboeVwJmtVgAQlsYs1Lnzc9VASKFGKE_vZGX8xzna-N6vStIObta9qhBA&_nc_ht=scontent.ftuc1-2.fna&oh=c9a69b4ca5e68702737d860b059bde16&oe=5EB13954") center/cover ;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+
+  .div-culture{
+    display: inline-block;
+    background-color: black;
+    width: 100%;
+  }
+
+  .service{
+    margin-top: 30px;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .leftImg{
+    width: 50%;
+  }
+
+  .rightImg{
+    width: 50%;
+  }
+
+  .rightInfo{
+    margin-top: 10%;
+    display: block;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 800;
+    width: 50%;
+    float: right;
+    letter-spacing: 2px;
+    width: 50%;
+    color: var(--mainRed);
+  }
+
+  .leftInfo{
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 800;
+    width: 50%;
+    float: left;
+    letter-spacing: 2px;
+    margin-top: 10%;
+  }
+
+  .rightInfo p, .leftInfo p{
+    font-size: 1.3vw;
+    width: 50%;
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  .rightInfo h1, .leftInfo h1{
+    font-size: 3vw;
+    color: var(--mainRed);
+    font-weight: bold;
+  }
+
+
+  @media (max-width: 680px) {
+
+
+    .leftImg{
+      width: 80%;
+      margin-left: 10%;
+
+    }
   
+    .rightImg{
+      width: 80%;
+      margin-left: 10%;
+    }
+  
+    .rightInfo{
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 800;
+      width: 100%;
+      letter-spacing: 2px;
+      color: var(--mainRed);
+      margin: auto;
+      margin-bottom: 50px;
+      margin-top: 15px;
+    }
+  
+    .leftInfo{
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 800;
+      width: 100%;
+      letter-spacing: 2px;
+      color: var(--mainRed);
+      margin: 0 auto;
+      margin-bottom: 30px;
+      margin-top: 15px;
+      margin-bottom: 50px;
+
+    }
+  
+    .rightInfo p, .leftInfo p{
+      font-size: 2vw;
+      width: 60%;
+      text-align: center;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+  
+    .rightInfo h1, .leftInfo h1{
+      font-size: 5vw;
+      color: var(--mainRed);
+      font-weight: bold;
+    }
+  }
+
+  /*  F I N  C U L T U R A */
