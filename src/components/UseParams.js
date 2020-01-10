@@ -1,10 +1,16 @@
 import { useParams } from 'react-router-dom';
-import ArtistX from './ArtistsX';
+import ArtistX from './Home/ArtistsX';
 import React from 'react';
+import EditArtistX from './Admin/EditArtistX';
 
-function UseParams(props){
-    var DJname = useParams().djs.split('-').join(' ');
-    return <ArtistX name={DJname}></ArtistX>
+function UseParams({ AdminPage }) {
+  var DJname = useParams().djsName.split('-').join(' ');
+
+  if (AdminPage) {
+    return <EditArtistX name={DJname}></EditArtistX>;
+  } else {
+    return <ArtistX name={DJname}></ArtistX>;
+  }
 }
 
 export default UseParams;

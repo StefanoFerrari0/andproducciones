@@ -1,12 +1,14 @@
-import React from 'react';
-import Banner from '../components/Banner';
-import Titulo from '../components/Title';
-import FormContact from '../components/FormContact';
+import React from "react";
+import Banner from "../components/Home/Banner";
+import Titulo from "../components/Home/Title";
+import FormContact from "../components/Home/FormContact";
 
 export default function Contacto() {
-    return <div>
+  return (
+    <div>
       <Banner hero="contactoPage"></Banner>
-      <Titulo hero="title" title="¡CONTACTANOS!"/>
-      <FormContact></FormContact>  
+      <Titulo hero="title" title="¡CONTACTANOS!" />
+      <FormContact></FormContact>
     </div>
+  );
 }

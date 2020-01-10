@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class Fiesta extends Component {
-    render() {
-        return <div>Hello from Fiesta</div>
-    }
+  render() {
+    return <div>Hello from Fiesta</div>;
+  }
 }
-
