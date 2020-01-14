@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
-export default function SubLink({url, hero, title})
-{
+export default function SubLink({ url, hero, title }) {
   return <div className="EventoDiv">
-         <a className="btn btn-primary btn-red" href="/eventos" role="button">{title}</a>
-        </div>
+    <Link className="btn btn-primary btn-red" to={url} role="button">{title}</Link>
+  </div>
 }

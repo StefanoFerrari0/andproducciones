@@ -2,19 +2,24 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/Home/Navbar';
-import Home from './pages/Home';
-import Artistas from './pages/ArtistsPage';
-import ArtistaX from './pages/ArtistaX';
-import Eventos from './pages/EventsPage';
-import EventXPage from './pages/EventXPage';
-import Cultura from './pages/CulturePage';
-import Contacto from './pages/ContactPage';
-import Error from './pages/ErrorPage';
-import LoginPage from './pages/LoginPage';
-import AdminPage from './pages/AdminPage';
-import AdminArtistPage from './pages/AdminArtistPage';
-import EditArtistX from './components/Admin/EditArtistX';
-import CreateArtistX from './pages/AdminCreateArtistPage';
+import Home from './pages/MainPage/Home';
+import Artistas from './pages/MainPage/Artistas/ArtistsPage';
+import ArtistaX from './pages/MainPage/Artistas/ArtistaX';
+import Eventos from './pages/MainPage/Eventos/EventsPage';
+import EventXPage from './pages/MainPage/Eventos/EventXPage';
+import Cultura from './pages/MainPage/Cultura/CulturePage';
+import Contacto from './pages/MainPage/Contacto/ContactPage';
+import Error from './pages/MainPage/Error/ErrorPage';
+
+import LoginPage from './pages/Admin/Login/LoginPage';
+import AdminPage from './pages/Admin/AdminPage';
+import AdminArtistPage from './pages/Admin/Artistas/AllArtistPage';
+import EditArtistX from './components/Admin/Artistas/EditArtistX';
+import CreateArtistX from './pages/Admin/Artistas/CreateArtistPage';
+
+import MainEvent from './pages/Admin/Eventos/AllEventsPage';
+import CreateEvent from './pages/Admin/Eventos/CreateEventPage';
+import EditEvent from './components/Admin/Eventos/EditEventX';
 
 import Footer from './components/Home/Footer';
 
@@ -36,6 +41,10 @@ function App() {
         <Route exact path="/admin/artistas" component={AdminArtistPage} />
         <Route exact path="/admin/artistas/:id" component={EditArtistX} />
         <Route exact path="/admin/nuevoArtista" component={CreateArtistX} />
+
+        <Route exact path="/admin/eventos" component={MainEvent} />
+        <Route exact path="/admin/eventos/:id" component={EditEvent} />
+        <Route exact path="/admin/nuevoEvento" component={CreateEvent} />
 
         <Route component={Error} />
       </Switch>

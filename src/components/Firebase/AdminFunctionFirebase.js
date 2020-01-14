@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { auth } from "../Firebase/firebase";
-import EditArtist from "../Admin/EditArtistX";
+import EditArtist from "../Admin/Artistas/EditArtistX";
 
 export default class FunctionAuth2 extends Component {
     _isMounted = false;

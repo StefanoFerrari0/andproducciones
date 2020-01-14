@@ -1105,8 +1105,61 @@ footer {
 }
 /*  F I N  L O G I N */
 
+/* E R R O R */ 
 
+.ErrorHeader {
+  min-height: calc(100vh - 66px);
+  background: url("https://scontent.ftuc1-2.fna.fbcdn.net/v/t1.0-9/s960x960/61153470_868466826831460_368712131928915968_o.jpg?_nc_cat=105&_nc_oc=AQlH7CM36IW035xzZXaiBwI-htWn2cBKdwjNrjuNltXX8YwpoYnWdwC5FYj41IJ6poo&_nc_ht=scontent.ftuc1-2.fna&_nc_tp=1&oh=ba6246b9b65ed4a9431db6be36f86d30&oe=5ED8E038") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.ErrorBanner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  text-align: center;
+  letter-spacing: var(--mainSpacing);
+  color: white;
+}
+.ErrorBanner h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+
+}
+.ErrorBanner div {
+  width: 10rem;
+  height: 5px;
+  background: var(--primaryColor);
+  margin: 1.7rem auto;
+}
+.ErrorBanner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 576px) {
+  .ErrorBanner {
+    padding: 2rem 3rem;
+  }
+  .ErrorBanner h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ErrorBanner {
+    padding: 2rem 6rem;
+  }
+  .ErrorBanner h1 {
+    font-size: 4rem;
+  }
+}
+
+/* F I N  E R R O R */
+
+/* A D M I N  */
 label{
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
@@ -1129,3 +1182,8 @@ label{
   text-align: center;
   margin-bottom: 40px;
 }
+
+.form-group{
+  margin-bottom: 80px;
+}
+/* F I N  A D M I N */

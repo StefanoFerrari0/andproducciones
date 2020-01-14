@@ -1,5 +1,5 @@
 import React from "react";
-import SignOut from "./SignOut";
+import SignOut from "../Admin/Login/SignOut";
 import Card from "../Home/Cards";
 
 export default function AdminHome() {
