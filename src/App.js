@@ -28,23 +28,23 @@ function App() {
     <>
       <Navbar></Navbar>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/artistas" component={Artistas} />
-        <Route exact path="/artistas/:djsName" component={ArtistaX} />
-        <Route exact path="/eventos" component={Eventos} />
-        <Route exact path="/eventos/:nombreFiesta" component={EventXPage} />
-        <Route exact path="/cultura" component={Cultura} />
-        <Route exact path="/contacto" component={Contacto} />
-        <Route exact path="/login" component={LoginPage} />
+        <Route exact path="/andproducciones" component={Home} />
+        <Route exact path="/andproducciones/artistas" component={Artistas} />
+        <Route exact path="/andproducciones/artistas/:djsName" component={ArtistaX} />
+        <Route exact path="/andproducciones/eventos" component={Eventos} />
+        <Route exact path="/andproducciones/eventos/:nombreFiesta" component={EventXPage} />
+        <Route exact path="/andproducciones/cultura" component={Cultura} />
+        <Route exact path="/andproducciones/contacto" component={Contacto} />
+        <Route exact path="/andproducciones/login" component={LoginPage} />
 
-        <Route exact path="/admin" component={AdminPage} />
-        <Route exact path="/admin/artistas" component={AdminArtistPage} />
-        <Route exact path="/admin/artistas/:id" component={EditArtistX} />
-        <Route exact path="/admin/nuevoArtista" component={CreateArtistX} />
+        <Route exact path="/andproducciones/admin" component={AdminPage} />
+        <Route exact path="/andproducciones/admin/artistas" component={AdminArtistPage} />
+        <Route exact path="/andproducciones/admin/artistas/:id" component={EditArtistX} />
+        <Route exact path="/andproducciones/admin/nuevoArtista" component={CreateArtistX} />
 
-        <Route exact path="/admin/eventos" component={MainEvent} />
-        <Route exact path="/admin/eventos/:id" component={EditEvent} />
-        <Route exact path="/admin/nuevoEvento" component={CreateEvent} />
+        <Route exact path="/andproducciones/admin/eventos" component={MainEvent} />
+        <Route exact path="/andproducciones/admin/eventos/:id" component={EditEvent} />
+        <Route exact path="/andproducciones/admin/nuevoEvento" component={CreateEvent} />
 
         <Route component={Error} />
       </Switch>
