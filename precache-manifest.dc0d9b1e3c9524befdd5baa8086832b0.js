@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "003554c78c2b51aa98600e8a394db567",
+    "revision": "d86c997a783ac88be7f10476c81b131b",
     "url": "/andproducciones/index.html"
   },
   {
-    "revision": "0845d5618dc955a74185",
+    "revision": "590d90de721efa9f04e8",
     "url": "/andproducciones/static/css/main.60ba4de3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/andproducciones/static/js/2.c0639527.chunk.js.LICENSE"
   },
   {
-    "revision": "0845d5618dc955a74185",
-    "url": "/andproducciones/static/js/main.e5a6c139.chunk.js"
+    "revision": "590d90de721efa9f04e8",
+    "url": "/andproducciones/static/js/main.aa08890d.chunk.js"
   },
   {
     "revision": "3a8c43f9108eb1910c0c",
