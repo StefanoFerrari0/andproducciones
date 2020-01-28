@@ -28,7 +28,7 @@ function App() {
     <>
       <Navbar></Navbar>
       <Switch>
-        <Route exact path="/andproducciones" component={Home} />
+        <Route exact path="/andproducciones/" component={Home} />
         <Route exact path="/andproducciones/artistas" component={Artistas} />
         <Route exact path="/andproducciones/artistas/:djsName" component={ArtistaX} />
         <Route exact path="/andproducciones/eventos" component={Eventos} />
