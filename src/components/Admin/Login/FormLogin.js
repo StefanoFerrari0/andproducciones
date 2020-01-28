@@ -67,7 +67,7 @@ class FormLogin extends Component {
     auth
       .signInWithEmailAndPassword(this.state.email, this.state.password)
       .then(u => {
-        window.location.href = "/admin";
+        window.location.href = "/andproducciones/admin";
       })
       .catch(error => {
         this.setState({ error });

@@ -100,7 +100,7 @@ export default class EditArtistX extends Component {
         userSoundcloud: ""
       });
 
-      this.props.history.push("/admin/artistas/");
+      this.props.history.push("/andproducciones/admin/artistas/");
     })
       .catch((error) => {
         console.error("Error adding document: ", error);

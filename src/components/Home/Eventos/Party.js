@@ -43,7 +43,7 @@ export default class Party extends Component {
               name={evento.data.name}
               hero="card"
               date={evento.data.date}
-              urlEvento="/eventos"
+              urlEvento="/andproducciones/eventos"
               url={evento.data.images[0]}
             />
           ))

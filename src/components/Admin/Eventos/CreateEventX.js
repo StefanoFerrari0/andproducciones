@@ -84,7 +84,7 @@ export default class CreateEventX extends Component {
                 artists: [],
                 allArtist: []
             });
-            window.location.replace("/admin/eventos")
+            window.location.replace("/andproducciones/admin/eventos")
         })
             .catch((error) => {
                 console.error("Error adding document: ", error);

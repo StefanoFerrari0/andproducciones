@@ -42,7 +42,7 @@ export default class AdminArtist extends Component {
                 artists: artistas,
                 allArtist: todosArtistas
             }).then(
-                window.location.replace("/admin/eventos")
+                window.location.replace("/andproducciones/admin/eventos")
             ).catch((error) => {
                 console.error("Error removing document: ", error);
             });

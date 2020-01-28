@@ -38,7 +38,7 @@ export default class Artists extends Component {
               name={artista.data.name}
               hero="card"
               urlEvento={
-                "/artistas/" + artista.data.name.split(" ").join("-")
+                "/andproducciones/artistas/" + artista.data.name.split(" ").join("-")
               }
               url={artista.data.images[0]}
             />

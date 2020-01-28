@@ -13,7 +13,7 @@ export default function Home() {
       <div className="div-card-home">
         <Fiesta homePage></Fiesta>
       </div>
-      <SubLink url="/eventos" hero="sub-evento" title="+ eventos"></SubLink>
+      <SubLink url="/andproducciones/eventos" hero="sub-evento" title="+ eventos"></SubLink>
       <SoundCloudHome
         title="Nuestro Soundcloud"
         hero="title"
