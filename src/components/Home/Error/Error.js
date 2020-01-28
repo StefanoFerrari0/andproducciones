@@ -10,7 +10,7 @@ const Error = () => {
                 <div />
                 <p>ERROR 404: La página que intentaste acceder no existe</p>
 
-                <Link to="/" className="btn btn-form" style={{ width: "200px", }}>
+                <Link to="/andproducciones/" className="btn btn-form" style={{ width: "200px", }}>
                     Volver a la página principal
             </Link>
             </div>

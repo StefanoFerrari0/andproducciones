@@ -27,7 +27,7 @@ export default class AdminArtist extends Component {
             });
     }
 
-    delete(id, nombre, fecha, informacion, localizacion, lugar, imagenes, artistas) {
+    delete(id, nombre, fecha, informacion, localizacion, lugar, imagenes, artistas, todosArtistas) {
 
         if (window.confirm("¿Está seguro que desea eliminar el evento " + nombre + "?")) {
             const updateRef = db.collection('Eventos').doc(id);
@@ -39,7 +39,8 @@ export default class AdminArtist extends Component {
                 location: localizacion,
                 place: lugar,
                 images: imagenes,
-                artists: artistas
+                artists: artistas,
+                allArtist: todosArtistas
             }).then(
                 window.location.replace("/admin/eventos")
             ).catch((error) => {
@@ -66,7 +67,7 @@ export default class AdminArtist extends Component {
                                         <tr>
                                             <td colSpan="4" align="center" text-size="25px">
                                                 <Link style={{ width: '500px' }} className="btn btn-success"
-                                                    to={`/admin/nuevoEvento`}>Nuevo evento</Link>
+                                                    to={`/andproducciones/admin/nuevoEvento`}>Nuevo evento</Link>
                                             </td>
                                         </tr>
                                         <tr>
@@ -82,14 +83,14 @@ export default class AdminArtist extends Component {
                                                     <td>{eventos.data.place}</td>
                                                     <td>
                                                         <Link className="btn btn-primary"
-                                                            to={`/admin/eventos/${eventos.id}`}>Editar
+                                                            to={`/andproducciones/admin/eventos/${eventos.id}`}>Editar
                                                         </Link>
                                                     </td>
                                                     <td>
                                                         <button onClick={this.delete.bind(this, eventos.id,
                                                             eventos.data.name, eventos.data.date, eventos.data.info,
                                                             eventos.data.location, eventos.data.place,
-                                                            eventos.data.images, eventos.data.artists)}
+                                                            eventos.data.images, eventos.data.artists, eventos.data.allArtist)}
                                                             className="btn-form" style={{ width: '140px' }}>
                                                             Borrar
                                                         </button>

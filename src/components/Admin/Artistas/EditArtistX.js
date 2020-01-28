@@ -261,46 +261,46 @@ export default class EditArtistX extends Component {
         <div className="panel-body" style={{ marginLeft: "20%", width: "60%", alignItems: "center" }}>
           <form className="center-block" onSubmit={this.onSubmit}>
             <Title hero="titleAdmin" title={`Editando a ${this.state.name}`} />
-            <div className="form-group">
+            <div className="form-group admin-form">
               <input type="text" className="form-control" name="name"
                 value={this.state.name} onChange={this.onChange} placeholder="Nombre"
                 required />
             </div>
 
-            <div className="form-group" style={{ marginLeft: "37%" }} >
+            <div className="form-group admin-form" style={{ marginLeft: "37%" }} >
               <label style={{ display: "inline-block" }} htmlFor="isResident">
                 <input style={{ width: "50px", height: "30px", display: "inline-block" }} type="checkbox"
                   onChange={this.handleCheck} value={this.state.isResident} className="form-control" name="isResident" />¿Es residente?
                       </label>
             </div>
 
-            <div className="form-group">
+            <div className="form-group admin-form">
               <textarea className="form-control" style={{ textAlign: "center" }} name="bio"
                 onChange={this.onChange} value={this.state.bio} placeholder="Biografía" cols="80" rows="6" required />
             </div>
 
-            <div className="form-group">
+            <div className="form-group admin-form">
               <label htmlFor="soundcloud">Soundcloud:</label>
               <input type="text" className="form-control" name="soundcloud"
                 value={this.state.soundcloud} onChange={this.onChange}
                 placeholder="Ej: https://soundcloud.com/andpro-tucuman" />
             </div>
 
-            <div className="form-group">
+            <div className="form-group admin-form">
               <label htmlFor="instagram">Instagram:</label>
               <input type="text" className="form-control" name="instagram"
                 value={this.state.instagram} onChange={this.onChange}
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-group admin-form">
               <label htmlFor="spotify">Spotify:</label>
               <input type="text" className="form-control" name="spotify"
                 value={this.state.spotify} onChange={this.onChange}
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-group admin-form">
               <label htmlFor="userSoundcloud">Usuario de Soundcloud:</label>
               <input type="number" className="form-control" name="userSoundcloud"
                 value={this.state.userSoundcloud} onChange={this.onChange}

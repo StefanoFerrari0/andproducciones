@@ -286,7 +286,7 @@ export default class CreateEventX extends Component {
                         <form className="center-block" onSubmit={this.onSubmit}>
                             <Title hero="titleAdmin" title="NUEVO EVENTO" />
 
-                            <div className="form-group">
+                            <div className="form-group admin-form">
                                 <label htmlFor="name">Nombre: </label>
                                 <input type="text" className="form-control" name="name"
                                     value={this.state.name} onChange={this.onChange} placeholder="Nombre"
@@ -294,7 +294,7 @@ export default class CreateEventX extends Component {
                             </div>
 
 
-                            <div className="form-group">
+                            <div className="form-group admin-form">
                                 <label htmlFor="info">Información: </label>
                                 <textarea className="form-control" style={{ textAlign: "center" }} name="info"
                                     onChange={this.onChange} value={this.state.info} placeholder="Información"
@@ -302,7 +302,7 @@ export default class CreateEventX extends Component {
                             </div>
 
 
-                            <div className="form-group">
+                            <div className="form-group admin-form">
                                 <label htmlFor="location">Lugar: </label>
                                 <textarea className="form-control" style={{ textAlign: "center" }} name="location"
                                     onChange={this.onChange} value={this.state.location} placeholder="Localización"
@@ -317,14 +317,14 @@ export default class CreateEventX extends Component {
                             </div>
 
 
-                            <div className="form-group">
+                            <div className="form-group admin-form">
                                 <label htmlFor="date">Fecha:</label>
                                 <input type="text" className="form-control" name="date"
                                     placeholder="EJ: 02/04/20" value={this.state.date} onChange={this.onChange}
                                 />
                             </div>
 
-                            <div className="form-group">
+                            <div className="form-group admin-form">
                                 <label htmlFor="place">Orden en el que desea que aparezca el evento:</label>
                                 <input type="number" className="form-control" name="place"
                                     value={this.state.place} onChange={this.onChange}
@@ -335,14 +335,14 @@ export default class CreateEventX extends Component {
                                 </small>
                             </div>
 
-                            <div className="form-group">
-                                <label htmlFor="artists">LINE UP</label>
+                            <div className="form-group admin-form">
+                                <label htmlFor="artists">LINE UP (OBLIGATORIO)</label>
 
                                 <div className="container" style={{ width: "1200px", display: "block" }} >
-                                    <table className="table table-responsive table-hover table-dark" style={{ width: "300px", float: "left" }}>
+                                    <table className="table table-responsive table-hover table-dark" style={{ width: "300px" }}>
                                         <thead>
                                             <tr>
-                                                <th>Artistas existentes (OBLIGATORIO)</th>
+                                                <th>Artistas existentes</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -361,7 +361,7 @@ export default class CreateEventX extends Component {
                                         </tbody>
                                     </table>
 
-                                    <table className="table table-responsive table-hover table-dark" style={{ height: "fit-content", width: "300px", float: "left" }}>
+                                    <table className="table table-responsive table-hover table-dark" style={{ height: "fit-content", width: "300px" }}>
                                         <thead>
                                             <tr>
                                                 <th>Artistas del evento</th>

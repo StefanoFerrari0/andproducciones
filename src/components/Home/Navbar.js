@@ -17,7 +17,7 @@ export default class Navbar extends Component {
     return (
       <nav className="navbar">
         <div className={this.state.isOpen ? "nav-logo logo-center" : "nav-logo"}>
-          <Link to="/">
+          <Link to="/andproducciones/">
             <img id="logo" src={Logo} alt="AndProducciones" />
           </Link>
         </div>
@@ -33,16 +33,16 @@ export default class Navbar extends Component {
             className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
           >
             <li>
-              <Link to="/eventos">Eventos</Link>
+              <Link to="/andproducciones/eventos">Eventos</Link>
             </li>
             <li>
-              <Link to="/artistas">Artistas</Link>
+              <Link to="/andproducciones/artistas">Artistas</Link>
             </li>
             <li>
-              <Link to="/cultura">Cultura</Link>
+              <Link to="/andproducciones/cultura">Cultura</Link>
             </li>
             <li>
-              <Link to="/contacto">Contacto</Link>
+              <Link to="/andproducciones/contacto">Contacto</Link>
             </li>
           </ul>
         </div>

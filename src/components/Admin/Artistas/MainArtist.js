@@ -49,8 +49,6 @@ export default class AdminArtist extends Component {
     }
   }
 
-
-
   HtmlArtistas() {
     const artistas = this.state.artistas;
 
@@ -66,7 +64,7 @@ export default class AdminArtist extends Component {
                       <td colSpan="4"><SignOut></SignOut></td>
                     </tr>
                     <tr>
-                      <td colSpan="4" align="center" text-size="25px"> <Link style={{ width: '500px' }} className="btn btn-success" to={`/admin/nuevoArtista`}>Nuevo artista</Link></td>
+                      <td colSpan="4" align="center" text-size="25px"> <Link style={{ width: '500px' }} className="btn btn-success" to={`andproducciones/admin/nuevoArtista`}>Nuevo artista</Link></td>
                     </tr>
                     <tr>
                       <th scope="col">Nombre</th>
@@ -78,7 +76,7 @@ export default class AdminArtist extends Component {
                         <tr key={artista.id}>
                           <th scope="row">{artista.data.name}</th>
                           <td>
-                            <Link className="btn btn-primary" to={`/admin/artistas/${artista.id}`}>Editar</Link>
+                            <Link className="btn btn-primary" to={`andproducciones/admin/artistas/${artista.id}`}>Editar</Link>
                           </td>
                           <td>
                             <button onClick={this.delete.bind(this, artista.id, artista.data.name,

@@ -312,7 +312,7 @@ export default class EditEventArtist extends Component {
                         <form className="center-block" onSubmit={this.onSubmit}>
                             <Title hero="titleAdmin" title="NUEVO EVENTO" />
 
-                            <div className="form-group">
+                            <div className="form-group admin-form">
                                 <label htmlFor="name">Nombre: </label>
                                 <input type="text" className="form-control" name="name"
                                     value={this.state.name} onChange={this.onChange} placeholder="Nombre"
@@ -320,7 +320,7 @@ export default class EditEventArtist extends Component {
                             </div>
 
 
-                            <div className="form-group">
+                            <div className="form-group admin-form">
                                 <label htmlFor="info">Información: </label>
                                 <textarea className="form-control" style={{ textAlign: "center" }} name="info"
                                     onChange={this.onChange} value={this.state.info} placeholder="Información"
@@ -328,7 +328,7 @@ export default class EditEventArtist extends Component {
                             </div>
 
 
-                            <div className="form-group">
+                            <div className="form-group admin-form">
                                 <label htmlFor="location">Lugar: </label>
                                 <textarea className="form-control" style={{ textAlign: "center" }} name="location"
                                     onChange={this.onChange} value={this.state.location} placeholder="Localización"
@@ -343,14 +343,14 @@ export default class EditEventArtist extends Component {
                             </div>
 
 
-                            <div className="form-group">
+                            <div className="form-group admin-form">
                                 <label htmlFor="date">Fecha:</label>
                                 <input type="text" className="form-control" name="date"
                                     placeholder="EJ: 02/04/20" value={this.state.date} onChange={this.onChange}
                                 />
                             </div>
 
-                            <div className="form-group">
+                            <div className="form-group admin-form">
                                 <label htmlFor="place">Orden en el que desea que aparezca el evento:</label>
                                 <input type="number" className="form-control" name="place"
                                     value={this.state.place} onChange={this.onChange}
@@ -361,7 +361,7 @@ export default class EditEventArtist extends Component {
                                 </small>
                             </div>
 
-                            <div className="form-group">
+                            <div className="form-group admin-form">
                                 <label htmlFor="artists">LINE UP</label>
 
                                 {this.state.allArtist.length === 0 ?
