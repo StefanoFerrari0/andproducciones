@@ -8,7 +8,7 @@ import SoundCloudHome from "../../components/Home/Soundcloud";
 export default function Home() {
   return (
     <>
-      <Banner hero="eventoDefault" children="08/02/2020"></Banner>
+      <Banner hero="eventoDefault" children="08/02/2021"></Banner>
       <Titulo hero="title" title="ÚLTIMOS EVENTOS" />
       <div className="div-card-home">
         <Fiesta homePage></Fiesta>
