@@ -17,7 +17,7 @@
 }
 
 .body {
-  background: url("https://scontent.ftuc1-2.fna.fbcdn.net/v/t1.0-9/79806531_447653599515011_8799063533259063296_n.jpg?_nc_cat=111&_nc_oc=AQktkuJ0JnN70UzZbbxUgxZCRJYpnQ6XS_AixqAD7rto2Exz7ZcE5mdEf6j5BeKiY2Q&_nc_ht=scontent.ftuc1-2.fna&oh=e66c5a615f62242df4e468d296298f57&oe=5E7C9952");
+  background: url("https://firebasestorage.googleapis.com/v0/b/andproducciones-b1b01.appspot.com/o/fondo.jpg?alt=media&token=bc60cda5-d1a0-4eb7-b90b-25880ad31234");
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
 }
@@ -392,7 +392,7 @@ footer {
 
 .eventoPage {
   min-height: calc(100vh - 66px);
-  background: url("https://scontent.ftuc1-2.fna.fbcdn.net/v/t1.0-0/p640x640/53691270_828066327538177_5143837534463197184_o.jpg?_nc_cat=102&_nc_oc=AQntr8DjUXcURdYbYtqMMBzoSk7aVwnx8trpgAgiTZKUrWGQlirstfp8zLkxVykAoZY&_nc_ht=scontent.ftuc1-2.fna&oh=6a4a3c4d33214a27b4fcfbd40af4a439&oe=5EA99930")
+  background: url("https://firebasestorage.googleapis.com/v0/b/andproducciones-b1b01.appspot.com/o/53691270_828066327538177_5143837534463197184_o.jpg?alt=media&token=ddf66189-d7b7-4d6a-a0fa-f431ebf33262")
     center/cover;
   display: flex;
   align-items: center;
@@ -405,7 +405,7 @@ footer {
 
 .artistasPage {
   min-height: calc(100vh - 66px);
-  background: url("https://scontent.ftuc1-1.fna.fbcdn.net/v/t1.0-9/s960x960/71909391_961477800863695_8894275914465017856_o.jpg?_nc_cat=104&_nc_oc=AQkKtHvoquQOHg9UjfgutqWa-dEGyIacHnhSFqCqpQmxtBhwdX9ia10t2W8FVTARLZc&_nc_ht=scontent.ftuc1-1.fna&oh=b8630e00e2cfee77682059bb7b304da8&oe=5E6D8146")
+  background: url("https://firebasestorage.googleapis.com/v0/b/andproducciones-b1b01.appspot.com/o/Artistas.jpg?alt=media&token=70759087-d55c-40ed-8cba-7f0df9843489")
     center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -418,7 +418,7 @@ footer {
 
 .contactoPage {
   min-height: calc(100vh - 66px);
-  background: url("https://scontent.ftuc1-2.fna.fbcdn.net/v/t1.0-9/s960x960/72377237_961472120864263_1964672342185476096_o.jpg?_nc_cat=102&_nc_oc=AQkTqBKdJn1usjnHEKBYniEjxdkTFVaHwYDcmi8n7uxS7IG4IFzbMJWAlZdUk-q_1No&_nc_ht=scontent.ftuc1-2.fna&oh=aca44ade31198b9d7099236138a54ae7&oe=5E77CE8B")
+  background: url("https://firebasestorage.googleapis.com/v0/b/andproducciones-b1b01.appspot.com/o/Contacto.jpg?alt=media&token=db15164c-4cb4-4e8c-a754-0ed9620925f8")
     center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -439,7 +439,7 @@ footer {
   width: 800px;
   margin: auto;
   height: 500px;
-  background: url("https://scontent.ftuc1-2.fna.fbcdn.net/v/t1.0-0/p640x640/73495170_961476474197161_61866624486998016_o.jpg?_nc_cat=102&_nc_oc=AQk6c3a1_FD4ys4gWVBaCsUAlfAWHtQ0r9DWvwLNlhsenPZh-UxnYTweXYTF0OrPXBA&_nc_ht=scontent.ftuc1-2.fna&oh=bb2b96da67966ad816a0a3201ed079b6&oe=5E684443")
+  background: url("https://firebasestorage.googleapis.com/v0/b/andproducciones-b1b01.appspot.com/o/Contacto%20fondo.jpg?alt=media&token=fb888c7a-3e30-4443-ad15-ad28590cc69b")
     center/cover no-repeat;
   align-items: center;
 }
@@ -928,7 +928,7 @@ footer {
 
 .culturePage {
   min-height: calc(100vh - 66px);
-  background: url("https://scontent.ftuc1-2.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/72604232_961478627530279_1631796017215045632_o.jpg?_nc_cat=105&efg=eyJpIjoidCJ9&_nc_ohc=xboeVwJmtVgAQlsYs1Lnzc9VASKFGKE_vZGX8xzna-N6vStIObta9qhBA&_nc_ht=scontent.ftuc1-2.fna&oh=c9a69b4ca5e68702737d860b059bde16&oe=5EB13954")
+  background: url("https://firebasestorage.googleapis.com/v0/b/andproducciones-b1b01.appspot.com/o/72604232_961478627530279_1631796017215045632_o.jpg?alt=media&token=9166ae2e-32df-46f6-acf2-76f1e5a72573")
     center/cover;
   display: flex;
   align-items: center;
@@ -1109,7 +1109,7 @@ footer {
 
 .ErrorHeader {
   min-height: calc(100vh - 66px);
-  background: url("https://scontent.ftuc1-2.fna.fbcdn.net/v/t1.0-9/s960x960/61153470_868466826831460_368712131928915968_o.jpg?_nc_cat=105&_nc_oc=AQlH7CM36IW035xzZXaiBwI-htWn2cBKdwjNrjuNltXX8YwpoYnWdwC5FYj41IJ6poo&_nc_ht=scontent.ftuc1-2.fna&_nc_tp=1&oh=ba6246b9b65ed4a9431db6be36f86d30&oe=5ED8E038") center/cover no-repeat;
+  background: url("https://firebasestorage.googleapis.com/v0/b/andproducciones-b1b01.appspot.com/o/61153470_868466826831460_368712131928915968_o.jpg?alt=media&token=24b5619b-3f6a-4e5f-9557-b66f6f3764f9") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
