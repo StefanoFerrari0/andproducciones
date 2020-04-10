@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/andproducciones/static/css/main.2596b493.chunk.css",
+    "main.css": "/andproducciones/static/css/main.b4dda01d.chunk.css",
     "main.js": "/andproducciones/static/js/main.4a23cb22.chunk.js",
     "main.js.map": "/andproducciones/static/js/main.4a23cb22.chunk.js.map",
     "runtime-main.js": "/andproducciones/static/js/runtime-main.f4063e88.js",
@@ -8,16 +8,16 @@
     "static/js/2.c0639527.chunk.js": "/andproducciones/static/js/2.c0639527.chunk.js",
     "static/js/2.c0639527.chunk.js.map": "/andproducciones/static/js/2.c0639527.chunk.js.map",
     "index.html": "/andproducciones/index.html",
-    "precache-manifest.fcb1d719bd2ccb6114dd3267b8637335.js": "/andproducciones/precache-manifest.fcb1d719bd2ccb6114dd3267b8637335.js",
+    "precache-manifest.57a640e3943a0b895cb0402fd700f7ee.js": "/andproducciones/precache-manifest.57a640e3943a0b895cb0402fd700f7ee.js",
     "service-worker.js": "/andproducciones/service-worker.js",
-    "static/css/main.2596b493.chunk.css.map": "/andproducciones/static/css/main.2596b493.chunk.css.map",
+    "static/css/main.b4dda01d.chunk.css.map": "/andproducciones/static/css/main.b4dda01d.chunk.css.map",
     "static/js/2.c0639527.chunk.js.LICENSE": "/andproducciones/static/js/2.c0639527.chunk.js.LICENSE",
     "static/media/logo.webp": "/andproducciones/static/media/logo.5e60d723.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.f4063e88.js",
     "static/js/2.c0639527.chunk.js",
-    "static/css/main.2596b493.chunk.css",
+    "static/css/main.b4dda01d.chunk.css",
     "static/js/main.4a23cb22.chunk.js"
   ]
 }
